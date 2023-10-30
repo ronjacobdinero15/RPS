@@ -1,0 +1,94 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+    text-align: center;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+/* HERO SECTION */
+.hero,
+.stats {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* BUTTONS SECTION */
+.buttons {
+    display: flex;  
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    cursor: pointer;
+}
+.buttons button {
+    display: flex;
+    justify-content: center;
+    flex: 1 0 140px;
+    cursor: pointer;
+    border: none;
+    transition: transform .05s;
+    background-color: transparent;
+}
+.buttons button img {
+    box-shadow: 2px 1px 3px 1px rgba(171, 171, 171, 0.5);
+    border-radius: 50px;
+    width: 150px;
+    aspect-ratio: 2/2;
+    object-fit: contain;
+    overflow: hidden;
+}
+.buttons button:hover {
+    transform: scale(1.2);
+}
+.buttons button:active {
+    transform: scale(0.9);
+}
+/* INPUT SECTION */
+.input {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input label {
+    margin-bottom: 10px;   
+}
+.input input {
+    border-radius: 10px;
+    width: 70px;
+    text-align: center;
+}
+/* GIF */
+.gif {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.gif img {
+    width: 100%;
+    height:auto;
+    object-fit: contain;
+    pointer-events: none;
+    overflow: hidden;
+}
+/* MEDIA QUERIES */
+@media (max-width: 343px) {
+    body {
+        display: block;
+    }
+}
+@media (max-width: 423px) {
+    .gif {
+        display: none;
+    }
+}
